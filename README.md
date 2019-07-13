@@ -14,7 +14,7 @@
 ```sh
 git clone https://github.com/sfi0zy/html-template.git
 cd html-template
-npm ci
+npm i
 ```
 
 ## Usage
