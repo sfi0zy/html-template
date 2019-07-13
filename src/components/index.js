@@ -1,7 +1,7 @@
-import MyComponent from './_my-component/script';
+import ComponentExample from './_component-example/script';
 
 const COMPONENTS = {
-    MyComponent,
+    ComponentExample,
 };
 
 export default COMPONENTS;

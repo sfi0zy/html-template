@@ -38,6 +38,7 @@ html(lang='en')
                 .aside-navigation._smaller-1._line-1-25._separate-3(role='navigation')
                     ul.mui-list.-no-bullets._separate-1
                         li.item: a(href='#overview') Overview
+                        li.item: a(href='#coding-conventions') Coding conventions
                     hr._separate-1
                     ul.mui-list.-no-bullets._separate-1
                         each file in files
@@ -50,7 +51,30 @@ html(lang='en')
                         .mui-row
                             a(href='#overview')
                                 h2._bigger-2#overview Overview
-                        p.mui-p._separate-1 . . . 
+                        p.mui-p._separate-1 Project description...
+                    ._separate-3
+                        .mui-row
+                            a(href='#coding-conventions')
+                                h2._bigger-2#coding-conventions Coding conventions
+                        h3._bigger-0._separate-1 JS
+                        ol.mui-list._separate-1
+                            li.item Always store components in separate directories
+                            li.item
+                                span Use Muilessium shortcuts in components:
+                                ul.mui-list
+                                    li.item $ = window.Muilessium
+                                    li.item _ = $.UTILS
+                            li.item Don't use Muilessium shortcuts in the utilities and modules, use imports instead.
+                            li.item Always create wrappers for dependencies and polyfills.
+                            li.item Register utilities, dependencies, polyfills, modules and components to the Muilessium using their index files.
+                        h3._bigger-0._separate-1 LESS
+                        ol.mui-list._separate-1
+                            li.item Use RSCSS.
+                            li.item Only helpers can include the !importnant rules.
+                            li.item Component names should be transformed to slug case with global prefix. For example: "MyComponent" (js) -&gt; .ui-my-component (less).
+                            li.item Prefer to use the color-scheme for all components.
+                            li.item Use constants for standard sizes, animation-functions, times etc.
+                            li.item Use normalize-ext for global styles and styles for tags.
                     ._separate-5
                         each file in files
                             div._allow-empty(id=file.file)

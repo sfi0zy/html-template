@@ -1,6 +1,6 @@
 {
   "name": "html-template",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "HTML template",
   "keywords": "html, pug, css, less, postcss, javascript, gulp, webpack, template",
   "author": "Ivan Bogachev <sfi0zy@gmail.com>",

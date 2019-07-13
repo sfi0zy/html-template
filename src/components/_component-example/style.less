@@ -1,0 +1,20 @@
+// @name ComponentExample
+// @description some description...
+//
+// @component ComponentExample
+// @method someCustomMethod() - does something
+// @event some-event
+// @state -some-state
+// @requires some-other-component
+//
+// @markup
+//.ui-component-example 123
+
+.@{global-prefix}component-example {
+    background: @component-example[background];
+    color: @component-example[color];
+
+    &.-some-state {
+        opacity: .7;
+    }
+}

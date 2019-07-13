@@ -27,11 +27,6 @@ npm run dev
 npm run prod
 ```
 
-## Screenshot (docs)
-
-![](https://habrastorage.org/webt/vg/fy/rg/vgfyrgruwsmhaaifeaijfdhyl-8.png)
-
-
 ## License
 
 MIT License

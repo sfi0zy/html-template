@@ -5,6 +5,10 @@
         "browser": true
     },
 
+    "globals": {
+        "Muilessium"
+    },
+
     "rules": {
         "indent":                            ["error", 4, { "SwitchCase": 1 }],
         "array-callback-return":             "warn",
