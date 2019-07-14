@@ -49,7 +49,6 @@
     "gulp-sourcemaps": "2.6.5",
     "gulp-util": "3.0.8",
     "list-selectors": "2.0.0",
-    "muilessium": "1.0.1",
     "path": "0.12.7",
     "postcss-fixes": "2.0.1",
     "postcss-preset-env": "6.7.0",
@@ -59,5 +58,8 @@
     "webpack": "4.35.3",
     "webpack-stream": "5.2.1",
     "yargs": "13.2.4"
+  },
+  "dependencies": {
+    "muilessium": "1.0.3"
   }
 }
