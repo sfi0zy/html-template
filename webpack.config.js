@@ -1,4 +1,8 @@
+const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const fs = require('fs');
+
+const pkg = JSON.parse(fs.readFileSync('./package.json'));
 
 
 module.exports = {
@@ -18,7 +22,14 @@ module.exports = {
                     }
                 }
             ]
-        }
+        },
+        plugins: [
+            new webpack.DefinePlugin({
+                __PROJECT__: JSON.stringify(pkg.name),
+                __PROJECT_VERSION__: JSON.stringify(pkg.version),
+                __DEBUG__: true
+            })
+        ]
     },
 
     production: {
@@ -38,6 +49,11 @@ module.exports = {
             ]
         },
         plugins: [
+            new webpack.DefinePlugin({
+                __PROJECT__: JSON.stringify(pkg.name),
+                __PROJECT_VERSION__: JSON.stringify(pkg.version),
+                __DEBUG__: false
+            }),
             new UglifyJSPlugin({
                 uglifyOptions: {
                     output: {

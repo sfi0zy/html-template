@@ -1,13 +1,9 @@
-const $            = Muilessium;
-const _            = $.UTILS;
-const STORE        = $.STORE;
-const EVENTS       = $.EVENTS;
-const MOUSE        = $.MOUSE;
-const KEYBOARD     = $.KEYBOARD;
-const TOUCHPAD     = $.TOUCHPAD;
-const POLYFILLS    = $.POLYFILLS;
-const DEPENDENCIES = $.DEPENDENCIES;
+// -----------------------------------------------------------------------------
+// Component Example
+// -----------------------------------------------------------------------------
 
+const $ = window.Muilessium;
+const _ = window.Muilessium.UTILS;
 
 export default class ComponentExample extends $.FACTORY.BaseComponent {
     constructor(element, options) {

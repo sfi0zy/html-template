@@ -6,7 +6,9 @@
     },
 
     "globals": {
-        "Muilessium"
+        __PROJECT__,
+        __PROJECT_VERSION__,
+        __DEBUG__
     },
 
     "rules": {

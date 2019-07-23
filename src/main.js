@@ -7,17 +7,21 @@ const GLOBAL_PREFIX = 'ui-';
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log(`__PROJECT__ = ${__PROJECT__}`);
+    console.log(`__PROJECT_VERSION__ = ${__PROJECT_VERSION__}`);
+    console.log(`__DEBUG__ = ${__DEBUG__}`);
+
     if (!window.Muilessium) {
         console.log('Muilessium is not defined. Include muilessium.min.js before this.');
     }
 
-    const $ = Muilessium;
-    const _ = $.UTILS;
+    const $ = window.Muilessium;
+    const _ = window.Muilessium.UTILS;
 
-    Muilessium.DEPENDENCIES = _.extend($.DEPENDENCIES, DEPENDENCIES);
-    Muilessium.POLYFILLS    = _.extend($.POLYFILLS,    POLYFILLS);
-    Muilessium.UTILS        = _.extend($.UTILS,        UTILS);
-    Muilessium.MODULES      = MODULES;
+    $.DEPENDENCIES = _.extend($.DEPENDENCIES, DEPENDENCIES);
+    $.POLYFILLS    = _.extend($.POLYFILLS,    POLYFILLS);
+    $.UTILS        = _.extend($.UTILS,        UTILS);
+    $.MODULES      = MODULES;
 
     function addComponents() {
         const components = require('./components/index').default;
@@ -29,5 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     addComponents();
+
+    console.log($);
 });
 
