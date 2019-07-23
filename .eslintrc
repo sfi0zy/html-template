@@ -11,6 +11,8 @@
         __DEBUG__
     },
 
+    "parser": "babel-eslint",
+
     "rules": {
         "indent":                            ["error", 4, { "SwitchCase": 1 }],
         "array-callback-return":             "warn",
