@@ -16,23 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const $ = window.Muilessium;
-    const _ = window.Muilessium.UTILS;
+    const _ = $.UTILS;
 
     $.DEPENDENCIES = _.extend($.DEPENDENCIES, DEPENDENCIES);
     $.POLYFILLS    = _.extend($.POLYFILLS,    POLYFILLS);
     $.UTILS        = _.extend($.UTILS,        UTILS);
     $.MODULES      = MODULES;
 
-    function addComponents() {
-        const components = require('./components/index').default;
+    const components = require('./components/index').default;
 
-        _.forEach(Object.keys(components), (type) => {
-            $.FACTORY.registerComponent(type, components[type]);
-            $.FACTORY.create(type, `.${GLOBAL_PREFIX}${_.toLispCase(type)}`, {});
-        });
-    }
-
-    addComponents();
+    _.forEach(Object.keys(components), (type) => {
+        $.FACTORY.registerComponent(type, components[type]);
+        $.FACTORY.create(type, `.${GLOBAL_PREFIX}${_.toLispCase(type)}`, {});
+    });
 
     console.log($);
 });

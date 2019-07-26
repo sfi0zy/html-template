@@ -7,7 +7,7 @@
 
 const UTILS = {
     // { someUtilityClass },
-    // someUtils,
+    // ...someUtils,
 };
 
 export default UTILS;

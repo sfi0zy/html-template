@@ -6,7 +6,7 @@
 - Pug, realFavicon generator, SVG injection and critical CSS
 - LESS, PostCSS (preset-env, postcss-fixes, doiuse, cssnano) + sourcemaps
 - Babel (preset-env), ESlint (extended airbnb-base config) + sourcemaps
-- Docs
+- Docs (DSS)
 - Browsersync
 - Muilessium framework included
 

@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 const $ = window.Muilessium;
-const _ = window.Muilessium.UTILS;
+const _ = $.UTILS;
 
 export default class ComponentExample extends $.FACTORY.BaseComponent {
     constructor(element, options) {
