@@ -1,5 +1,9 @@
 # HTML Template
 
+
+**!!! This repository will no longer supported. See the new boilerplate - [Promo Core](https://github.com/sfi0zy/promo-core).**
+
+
 ![HTML Template](https://habrastorage.org/webt/kj/5h/xy/kj5hxy0uwpor2jjkaoxdkqpfqb0.png)
 
 ## Features
